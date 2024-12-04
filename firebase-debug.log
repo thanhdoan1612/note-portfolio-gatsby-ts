@@ -1,0 +1,76 @@
+[debug] [2024-12-04T11:50:41.265Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T11:50:41.268Z] Command:       D:\Development Lib\nodejs\node.exe D:\Development Lib\nodejs\node_modules\firebase-tools\lib\bin\firebase.js
+[debug] [2024-12-04T11:50:41.268Z] CLI Version:   13.27.0
+[debug] [2024-12-04T11:50:41.269Z] Platform:      win32
+[debug] [2024-12-04T11:50:41.269Z] Node Version:  v20.18.0
+[debug] [2024-12-04T11:50:41.269Z] Time:          Wed Dec 04 2024 18:50:41 GMT+0700 (Indochina Time)
+[debug] [2024-12-04T11:50:41.269Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T11:50:41.272Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-12-04T11:50:41.307Z] TypeError: Cannot read properties of undefined (reading '0')
+    at Command.<anonymous> (D:\Development Lib\nvm\v20.18.0\node_modules\firebase-tools\lib\index.js:58:21)
+    at Command.listener [as _actionHandler] (D:\Development Lib\nvm\v20.18.0\node_modules\firebase-tools\node_modules\commander\index.js:413:31)
+    at Command._parseCommand (D:\Development Lib\nvm\v20.18.0\node_modules\firebase-tools\node_modules\commander\index.js:914:14)
+    at Command.parse (D:\Development Lib\nvm\v20.18.0\node_modules\firebase-tools\node_modules\commander\index.js:717:10)
+    at Object.<anonymous> (D:\Development Lib\nvm\v20.18.0\node_modules\firebase-tools\lib\bin\firebase.js:129:22)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-04T11:52:05.222Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T11:52:05.225Z] Command:       D:\Development Lib\nodejs\node.exe D:\Development Lib\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-04T11:52:05.225Z] CLI Version:   13.27.0
+[debug] [2024-12-04T11:52:05.225Z] Platform:      win32
+[debug] [2024-12-04T11:52:05.225Z] Node Version:  v20.18.0
+[debug] [2024-12-04T11:52:05.225Z] Time:          Wed Dec 04 2024 18:52:05 GMT+0700 (Indochina Time)
+[debug] [2024-12-04T11:52:05.225Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T11:52:05.228Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-12-04T11:52:05.267Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T11:52:05.267Z] > authorizing via signed-in user (thanhdoan1612@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Projects\Doan\notes-studio
+
+[debug] [2024-12-04T11:52:05.814Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-12-04T11:52:05.814Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-04T11:52:10.977Z] Checked if tokens are valid: false, expires at: 1732403226614
+[debug] [2024-12-04T11:52:10.978Z] Checked if tokens are valid: false, expires at: 1732403226614
+[debug] [2024-12-04T11:52:10.978Z] > refreshing access token with scopes: []
+[debug] [2024-12-04T11:52:10.979Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-04T11:52:10.979Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-04T11:52:11.202Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-04T11:52:11.202Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-04T11:52:11.219Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-04T11:52:11.890Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-04T11:52:11.890Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project note-studio-demo (note-studio-demo) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-04T11:52:13.782Z] Checked if tokens are valid: true, expires at: 1733316730202
+[debug] [2024-12-04T11:52:13.782Z] Checked if tokens are valid: true, expires at: 1733316730202
+[debug] [2024-12-04T11:52:13.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/note-studio-demo [none]
+[debug] [2024-12-04T11:52:14.074Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/note-studio-demo 200
+[debug] [2024-12-04T11:52:14.074Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/note-studio-demo {"projectId":"note-studio-demo","projectNumber":"446265857084","displayName":"note-studio-demo","name":"projects/note-studio-demo","resources":{"hostingSite":"note-studio-demo"},"state":"ACTIVE","etag":"1_f5090161-4c6c-4af9-881a-efb364f759cc"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

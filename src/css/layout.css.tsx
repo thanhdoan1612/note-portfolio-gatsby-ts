@@ -12,7 +12,6 @@ export const Header = styled.header`
 
 export const LogoContainer = styled(Link)`
   margin-left: 5%;
-  width: 20%;
 `;
 
 export const StyledLink = styled(Link)`

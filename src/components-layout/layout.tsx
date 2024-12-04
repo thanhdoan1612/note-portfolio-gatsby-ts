@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             src="../images/logo.png"
             alt="Logo"
             placeholder="blurred"
-            height={30}
+            height={50}
           />
         </LogoContainer>
         <Navbar />
