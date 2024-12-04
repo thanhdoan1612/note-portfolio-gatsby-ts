@@ -7,7 +7,7 @@ const Navbar = () => {
     <Nav>
       <NavList>
         <NavItem>
-          <StyledLink to="/">Home1</StyledLink>
+          <StyledLink to="/">Home21</StyledLink>
         </NavItem>
         <NavItem>
           <StyledLink to="/about">About</StyledLink>
